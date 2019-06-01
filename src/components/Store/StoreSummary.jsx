@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const ProjectSummary = (props) => {
     console.log(props)
@@ -14,6 +14,8 @@ const ProjectSummary = (props) => {
             <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4">{store.name}<i class="material-icons right">more_vert</i></span>
                 <p className="red-text text-darken-3"> Reveal More To view Opening Hours -------  </p>
+                <br/>
+                <Link to='./stores/store'>View Details</Link>
             </div>
             <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">{store.name}  Opening Hours<i class="material-icons right">close</i></span>
@@ -23,28 +25,28 @@ const ProjectSummary = (props) => {
                     </li>
                     <br />
                     <li>
-                    <blockquote>Tuesday : 11:30:50 to 22:00:22</blockquote>
-              </li>
+                        <blockquote>Tuesday : 11:30:50 to 22:00:22</blockquote>
+                    </li>
                     <br />
                     <li>
-                    <blockquote>Wednesday : 11:00:00 to 21:00:00</blockquote>
-              </li>
+                        <blockquote>Wednesday : 11:00:00 to 21:00:00</blockquote>
+                    </li>
                     <br />
                     <li>
-                    <blockquote>Thursday : 12:11:00 to 23:00:00</blockquote>
-              </li>
+                        <blockquote>Thursday : 12:11:00 to 23:00:00</blockquote>
+                    </li>
                     <br />
                     <li>
-                    <blockquote>Friday : 02:58:00 to 02:02:00</blockquote>
-              </li>
+                        <blockquote>Friday : 02:58:00 to 02:02:00</blockquote>
+                    </li>
                     <br />
                     <li>
-                    <blockquote>Saturday : 12:11:00 to 23:00:00</blockquote>
-              </li>
+                        <blockquote>Saturday : 12:11:00 to 23:00:00</blockquote>
+                    </li>
                     <br />
                     <li>
-                    <blockquote>Sunday : 10:00:00 to 21:00:00</blockquote>
-              </li>
+                        <blockquote>Sunday : 10:00:00 to 21:00:00</blockquote>
+                    </li>
                 </ul>
             </div>
         </div>

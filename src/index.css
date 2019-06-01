@@ -10,8 +10,12 @@ body {
   margin-top : 50px;
   margin-left :250px;
   width : 800px;
-
-
+}
+.Myfooter{
+  background-color: dimgray !important;
+}
+body{
+  background-color: burlywood;
 }
 .mynewcard{
   margin-top : 50px;
