@@ -13,7 +13,7 @@ const authReducer = (state = initState, action) => {
         }
         case 'LOGIN_FAILED' : {
             return {
-                authError: action.err.message
+                authError: 'Cannot Login'
             }
         }
         case 'SIGNOUT' : {

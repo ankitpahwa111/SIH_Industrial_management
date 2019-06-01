@@ -9,7 +9,7 @@ const SignedInLinks = (props)=>{
         <div>
             <ul className='right'>
             
-            <li><a onClick={props.signout}>Sign Out</a></li>
+            <li><a onClick={props.signOut}>Sign Out</a></li>
             <li><NavLink to='/' className='btn btn-floating pink lighten-3'>AP</NavLink></li>
             
             </ul>
@@ -19,7 +19,7 @@ const SignedInLinks = (props)=>{
 }
 const mapDispatchToProps=(dispatch)=>{
     return {
-        signOut : ()=>dispatch(signout())
+        signOut : ()=> dispatch(signout())
     }
 }
 

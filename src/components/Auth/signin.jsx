@@ -4,7 +4,7 @@ import {signIn} from '../../Store/authactions';
 import {Redirect} from 'react-router-dom'
 class Signin extends Component {
     state = {
-        email: '',
+        username: '',
         password: ''
     };
     handleOnChange = (e) => {
@@ -14,27 +14,25 @@ class Signin extends Component {
     }
     handleOnSubmit = (e) => {
         e.preventDefault();
-        // y
+        
         this.props.signIn(this.state)
 
-        // this.props.history.push('/')
+         this.props.history.push('/')
         // if(this.props.authError===null)
         // this.props.history.push('/')
     }
     render() {
-        const {authError,auth} = this.props;
+        const {authError} = this.props;
         
-        if(auth.uid){
-            return <Redirect to='/'></Redirect>
-        }
+        
         
         return (
             <div className="container">
                 <form onSubmit={this.handleOnSubmit} className="white">
                     <h5 className="dark-grey text-darken-3">Sign In</h5>
                     <div className="input-field">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" id="email" onChange={this.handleOnChange} />
+                        <label htmlFor="username">Username</label>
+                        <input type="text" id="username" onChange={this.handleOnChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="password">Password</label>
@@ -56,8 +54,7 @@ const mapDispatchToProps=(dispatch)=>{
 }
 const mapStateToProps=(state)=>{
     return {
-        authError : state.auth.authError,
-        auth : state.firebase.auth
+        authError : state.authError
     }
 }
 
