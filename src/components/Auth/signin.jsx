@@ -30,14 +30,14 @@ class Signin extends Component {
             <div className="container">
                 <br/>
                 <br/>
-                <form onSubmit={this.handleOnSubmit} className="white">
+                <form onSubmit={this.handleOnSubmit} className="Myform">
                     <h5 className="dark-grey text-darken-3">Sign In</h5>
                     <div className="input-field">
-                        <label htmlFor="username">Username</label>
-                        <input type="text" id="username" onChange={this.handleOnChange} />
+                        <label htmlFor="username" className="white-text">Username</label>
+                        <input type="text" id="username" onChange={this.handleOnChange} className="white-text" />
                     </div>
                     <div className="input-field">
-                        <label htmlFor="password">Password</label>
+                        <label htmlFor="password" className="white-text">Password</label>
                         <input type="password" id="password" onChange={this.handleOnChange} />
                     </div>
                     <div className="input-field">
