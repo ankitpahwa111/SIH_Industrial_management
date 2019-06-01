@@ -1,20 +1,42 @@
 import React, { Component } from 'react'
-
+import Chart from './Chart'
 
 
 class UserDetails extends Component {
 
     state = {
-        favourite: null
+        favourite: null,
+        chartData:{}
     }
 
-
-    handlefavourites = async (username, gender) => {
+    componentWillMount(){
+        this.getChartData();
+      }
+      getChartData(){
+        // Ajax calls here
         this.setState({
-            favourite: 'Added to Favourites'
-        })
-
-    }
+          chartData:{
+            labels: ['2019-04-04', '2019-04-09', '2019-04-11'],
+            datasets:[
+              {
+                label:'Dates',
+                data:[
+                  6,
+                  1,
+                  6
+                  
+                ],
+                backgroundColor:[
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 206, 86, 0.6)',
+                  
+                ]
+              }
+            ]
+          }
+        });
+      }
 
     render() {
         
@@ -51,8 +73,8 @@ class UserDetails extends Component {
 
             <React.Fragment>
                 <div class="row user-details">
-                    <div class="col s12 m6">
-                        <div class="card">
+                    <div class="col">
+                        <div class="card mydetailcard">
                             <div class="card-image">
                                 <img src="https://d28fujbigzf56k.cloudfront.net/static/img/store-logo.png" alt="ProfileImage" />
                                 <span class="card-title">{store.name}</span>
@@ -66,12 +88,14 @@ class UserDetails extends Component {
                                 <span><blockquote>Address : {store.place.street_address}</blockquote></span>
                                 
                                 <span><blockquote>Verified :<i class="material-icons">check</i> </blockquote></span>
-                                
+                                <br/>
+                                <br/>
+                                <Chart chartData={this.state.chartData} location="2019-04-11" legendPosition="bottom"/>
                                 
                                
                             </div>
                         </div>
-                        {/* add Photos of the user */}
+                        
                     </div>
                 </div>
                 <br /><br />

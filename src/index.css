@@ -22,8 +22,13 @@ body{
 }
 .mynewcard{
   margin-top : 50px;
-  width : 500px;
-  margin-left : 100px;
+  width : 700px;
+  margin-left : 350px;
+}
+.mydetailcard{
+  margin-top : 50px;
+  width : 700px;
+  margin-left : 400px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
