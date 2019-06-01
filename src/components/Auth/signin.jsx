@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
-import {signIn} from '../../store/Actions/authActions';
+import {signIn} from '../../Store/authactions';
 import {Redirect} from 'react-router-dom'
 class Signin extends Component {
     state = {
