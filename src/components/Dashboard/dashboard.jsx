@@ -1,9 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import axios from 'axios'
 //import {Redirect} from 'react-router-dom'
 class Dashboard extends Component {
+    state = {
+        store: {}
+    }
+    componentDidMount() {
+        axios({
+            method: 'GET',
+            url: 'http://testapi.halanx.com/stores/',
+            headers: [
 
+                {
+                    "key": "Authorization",
+                    "value": "Token 0f948ebc7f620891adde46a8b1d1049cc7d56fcc",
+                    "description": "",
+                    "enabled": true
+                },
+                {
+                    "key": "",
+                    "value": "",
+                    "description": "",
+                    "type": "text",
+                    "enabled": true
+                }
+
+            ]
+        }).then((store) => {
+            console.log(store)
+            this.setState({
+                store: store
+            })
+        })
+    }
     render() {
 
         return (
@@ -21,7 +51,7 @@ class Dashboard extends Component {
                                         <p class="h4">Through Halanx app, customers can know about their neighborhood happenings and they can order from neighborhood businesses like Grocery stores, restaurants, and pharmacies, and get it delivered in as little as an hour, through our part time shoppers. </p>
                                     </div>
                                     <div class="card-action">
-                                        <Link to ='/'>Go To Stores </Link>
+                                        <Link to='/stores'>Go To Stores </Link>
                                     </div>
                                 </div>
                             </div>

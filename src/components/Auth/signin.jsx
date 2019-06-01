@@ -28,6 +28,8 @@ class Signin extends Component {
         
         return (
             <div className="container">
+                <br/>
+                <br/>
                 <form onSubmit={this.handleOnSubmit} className="white">
                     <h5 className="dark-grey text-darken-3">Sign In</h5>
                     <div className="input-field">
@@ -43,6 +45,13 @@ class Signin extends Component {
                     </div>
                     <div className="center red-text">{authError}</div>
                 </form>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
             </div>
         )
     }

@@ -26,7 +26,7 @@ const Footer = (props) => {
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    © 2019 Vivah.com By Ankit Pahwa
+                    © 2019 By Ankit Pahwa
             
                 </div>
             </div>
