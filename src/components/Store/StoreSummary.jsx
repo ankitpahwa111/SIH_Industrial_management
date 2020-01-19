@@ -96,7 +96,7 @@ class ProjectSummary extends Component {
 
             <div class="card mynewcard">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="https://d28fujbigzf56k.cloudfront.net/static/img/store-logo.png" />
+                    <img class="activator" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR6kvEQe9u7JYQCWUznV86_j-SxxyXEVFmLcxCKXFGp6XneXhH&s" />
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Test Store<i class="material-icons right">more_vert</i></span>

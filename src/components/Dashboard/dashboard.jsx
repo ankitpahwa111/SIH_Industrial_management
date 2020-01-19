@@ -44,8 +44,8 @@ class Dashboard extends Component {
                             <div class="col s12 m7">
                                 <div class="card">
                                     <div class="card-image">
-                                        <img src='https://s3.amazonaws.com/poly-screenshots.angel.co/enhanced_screenshots/1687048-original.' />
-                                        <span class="card-title red-text text-darken-2 ">Welcome To Halanx Stores</span>
+                                        <img src='https://media.istockphoto.com/photos/oil-refinery-chemical-petrochemical-plant-picture-id582256640?k=6&m=582256640&s=612x612&w=0&h=HMX-gTHzDXnDhC9Q6XhWnJOZtncl9RVfpJrB49SXGQI=' />
+                                        {/* <span class="card-title red-text text-darken-2 ">Welcome To Halanx Stores</span> */}
                                     </div>
                                     <div class="card-content">
                                         <p class="h4">Through Halanx app, customers can know about their neighborhood happenings and they can order from neighborhood businesses like Grocery stores, restaurants, and pharmacies, and get it delivered in as little as an hour, through our part time shoppers. </p>

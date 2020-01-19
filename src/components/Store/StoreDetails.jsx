@@ -50,7 +50,7 @@ class UserDetails extends Component {
             "categories_available": [
                 "snacks"
             ],
-            "store_logo_url": "https://d28fujbigzf56k.cloudfront.net/static/img/store-logo.png",
+            "store_logo_url": "https://media.istockphoto.com/photos/oil-refinery-chemical-petrochemical-plant-picture-id582256640?k=6&m=582256640&s=612x612&w=0&h=HMX-gTHzDXnDhC9Q6XhWnJOZtncl9RVfpJrB49SXGQI=",
             "place": {
                 "id": 1,
                 "street_address": "BTW, M2K Road, Mangalam Place, Sector 3, Rohini",
@@ -58,7 +58,7 @@ class UserDetails extends Component {
                 "state": "Delhi",
                 "latitude": 28.7003629,
                 "longitude": 77.1174550000001,
-                "cover_pic_url": "https://d28fujbigzf56k.cloudfront.net/static/img/placelogo.png"
+                "cover_pic_url": "https://media.istockphoto.com/photos/oil-refinery-chemical-petrochemical-plant-picture-id582256640?k=6&m=582256640&s=612x612&w=0&h=HMX-gTHzDXnDhC9Q6XhWnJOZtncl9RVfpJrB49SXGQI="
             },
             "hcash_limit": 10.0,
             "hcash_percentage": 3.0,
@@ -76,7 +76,7 @@ class UserDetails extends Component {
                     <div class="col">
                         <div class="card mydetailcard">
                             <div class="card-image">
-                                <img src="https://d28fujbigzf56k.cloudfront.net/static/img/store-logo.png" alt="ProfileImage" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR6kvEQe9u7JYQCWUznV86_j-SxxyXEVFmLcxCKXFGp6XneXhH&s" alt="ProfileImage" />
                                 <span class="card-title">{store.name}</span>
                                 {/* <a class="btn-floating halfway-fab waves-effect waves-light red "><i class="material-icons">add</i></a> */}
                             </div>
