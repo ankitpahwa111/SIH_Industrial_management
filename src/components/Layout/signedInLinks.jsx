@@ -9,9 +9,9 @@ const SignedInLinks = (props)=>{
         <div>
             <ul className='right'>
             
-            <li><a onClick={props.signOut}>Sign Out</a></li>
-            <li><NavLink to='/'>About Us</NavLink></li>
-            <li><NavLink to='/'>Contact</NavLink></li>
+            <li><a onClick={props.signOut}>SELL</a></li>
+            <li><NavLink to='/'>BUY</NavLink></li>
+            <li><NavLink to='/'>Contact Expert</NavLink></li>
             <li><NavLink to='/' className='btn btn-floating pink lighten-3'>AP</NavLink></li>
             
             </ul>

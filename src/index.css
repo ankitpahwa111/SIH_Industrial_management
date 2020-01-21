@@ -8,7 +8,7 @@ body {
 }
 .mycard{
   margin-top : 50px;
-  margin-left :250px;
+  margin-left :100px;
   width : 800px;
 }
 .Myfooter{
@@ -29,6 +29,9 @@ body{
   margin-top : 50px;
   width : 700px;
   margin-left : 400px;
+}
+.myStore{
+  margin-left: 10px;
 }
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),

@@ -16,15 +16,16 @@ class UserDetails extends Component {
         // Ajax calls here
         this.setState({
           chartData:{
-            labels: ['2019-04-04', '2019-04-09', '2019-04-11'],
+            labels: ['5', '4', '3', '2', '1'],
             datasets:[
               {
-                label:'Dates',
+                label:'Ratings (out of 5)',
                 data:[
-                  6,
-                  1,
-                  6
-                  
+                  200,
+                  100,
+                  30,
+                  20,
+                  1
                 ],
                 backgroundColor:[
                   'rgba(255, 99, 132, 0.6)',
@@ -43,7 +44,7 @@ class UserDetails extends Component {
 
         let store = {
             "name": "Test Store",
-            "category": "Food",
+            "category": "Steel",
             "plans": [
                 1
             ],

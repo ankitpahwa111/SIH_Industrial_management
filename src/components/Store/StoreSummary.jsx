@@ -108,58 +108,41 @@ class ProjectSummary extends Component {
                     <span class="card-title grey-text text-darken-4">Test Store Opening Hours<i class="material-icons right">close</i></span>
                     <ul className="flow-text">
                         <li>
-                            <blockquote> Monday : {this.state.hours[0].from_hour} to {this.state.hours[0].to_hour}  </blockquote>
+                            <blockquote>Expected Price : Rs 3 / KG</blockquote>
                         </li>
                         <br />
                         <li>
-                            <blockquote>Tuesday :  {this.state.hours[1].from_hour} to  {this.state.hours[1].to_hour}</blockquote>
+                            <blockquote>Delivery/Pickup Available : Yes</blockquote>
                         </li>
                         <br />
                         <li>
-                            <blockquote>Wednesday :  {this.state.hours[2].from_hour} to  {this.state.hours[2].to_hour}</blockquote>
+                            <blockquote>Contact Info : 9899429440</blockquote>
                         </li>
                         <br />
                         <li>
-                            <blockquote>Thursday :  {this.state.hours[3].from_hour} to  {this.state.hours[3].to_hour}</blockquote>
+                            <blockquote>Grade : 304</blockquote>
                         </li>
-                        <br />
+                        <br/>
                         <li>
-                            <blockquote>Friday :  {this.state.hours[4].from_hour} to  {this.state.hours[4].to_hour}</blockquote>
-                        </li>
-                        <br />
-                        <li>
-                            <blockquote>Saturday :  {this.state.hours[5].from_hour} to  {this.state.hours[5].to_hour}</blockquote>
-                        </li>
-                        <br />
-                        <li>
-                            <blockquote>Sunday :  {this.state.hours[6].from_hour} to  {this.state.hours[6].to_hour}</blockquote>
+                            <blockquote>Thickness : 3mm</blockquote>
                         </li>
                     </ul>
-                    <br />
                     <div class="input-field col s12">
                         <select id='day'>
-                            <option value="" disabled selected>Monday</option>
-                            <option value="1">Monday</option>
-                            <option value="2">Tuesday</option>
-                            <option value="3">Wednesday</option>
-                            <option value="4">Thursday</option>
-                            <option value="5">Friday</option>
-                            <option value="6">Saturday</option>
-                            <option value="7">Sunday</option>
+                            <option value="" disabled selected>Flat</option>
+                            <option value="1">Flat</option>
+                            <option value="2">Roll</option>
                         </select>
-                        <label>Select Day</label>
+                        <label>Select Form</label>
                     </div>
                     <div class="row">
                         <div class="col s6">
                             <input id="from_hour" type="text" class="validate" onChange={this.handleChange} />
-                            <label for="last_name">From Hour (HH:MM:SS)</label>
+                            {/* <label for="last_name">From Hour (HH:MM:SS)</label> */}
                         </div>
-                        <div class="col s6">
-                            <input id="to_hour" type="text" class="validate" onChange={this.handleChange}/>
-                            <label for="last_name">To Hour (HH:MM:SS)</label>
-                        </div>
+                        
                     </div>
-                    <button class="btn waves-effect waves-light" type="submit" onClick={this.handleChange}>Edit Hours
+                    <button class="btn waves-effect waves-light" type="submit" onClick={this.handleChange}>Quote Price
                         <i class="material-icons right">create</i>
                     </button>
                 </div>

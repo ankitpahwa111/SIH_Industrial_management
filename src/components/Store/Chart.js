@@ -24,7 +24,7 @@ class Chart extends Component{
           options={{
             title:{
               display:this.props.displayTitle,
-              text:'Visits at this store ',
+              text:' Ratings vs Frequency chart ',
               fontSize:25
             },
             legend:{

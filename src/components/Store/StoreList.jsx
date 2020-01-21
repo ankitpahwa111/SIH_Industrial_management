@@ -35,11 +35,14 @@ const StoreList = (props) => {
   }]
   
   return (
-    <div className="store-list section">
-      {stores && stores.map(store =>
-        
-          <StoreSummary store={store} />
-        
+    <div className="store-list section ">
+      {stores && stores.map(store => 
+          <div className="row">
+            <StoreSummary className="col m6 " store={store} />
+            <StoreSummary className="col m6" store={store} />
+            <StoreSummary  className="col m6" store={store} />
+          </div>
+          
       )
 
       }
